@@ -1,0 +1,43 @@
+.pergunta-grupo{
+	display: flex;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	font-size:1.8rem;
+	border: 0.1rem solid #f00;
+	background-color: white;	
+}.pergunta-grupo:hover{
+	cursor: pointer;
+	transition: transform 150ms;
+	transform: translateY(-0.1rem);
+	box-shadow: 0 0 7rem 1rem 0 #dc0e0e;}
+.escolha-prefix{
+	padding: 1.3rem 2.3rem;
+	background-color: #f00;
+	color: white;
+}
+.escolha-texto{
+	padding: 1.3rem ;
+}
+
+.correta{
+	background-color:#28a745;
+	color: white;
+}
+.incorreta{
+	background-color: red;
+	color: white;
+}
+/*cabecalho*/
+
+#hud{
+	display:flex;
+	justify-content: space-around;
+}
+.hud-prefix{
+	text-align: center;
+	font-size: 2rem;
+}
+.hud-main-text{
+	text-align: center;
+	
+}

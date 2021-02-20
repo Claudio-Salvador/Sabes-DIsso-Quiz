@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" type="text/css" href="css/jogo.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div id="game" class="justify-center flex-column">
+			<div id="hud">
+				<div id="hud-item">
+					<p class="class-prefix">
+						Perguntas
+					</p>
+					<h1 class="hud-main-text" id="contadorDePergunta">
+					</h1>
+				</div>
+				<div id="hud-item">
+					<p class="class-prefix">
+						Score
+					</p>
+					<h1 class="hud-main-text" id="score">
+					0
+					</h1>
+				</div>
+			</div>
+			<h2 id="Pergunta">Qual é a resposta dessa pergunta? </h2>
+			<div class="pergunta-grupo">
+				<p class="escolha-prefix">A</p>
+				<p class="escolha-texto" data-number="1">Primeira escolha</p>
+			</div>				
+			<div class="pergunta-grupo">
+				<p class="escolha-prefix">B</p>
+				<p class="escolha-texto" data-number="2">Segunda escolha</p>
+			</div>	
+			<div class="pergunta-grupo">
+				<p class="escolha-prefix">C</p>
+				<p class="escolha-texto" data-number="3">Terceira escolha</p>
+			</div>	
+			<div class="pergunta-grupo">
+				<p class="escolha-prefix">D</p>
+				<p class="escolha-texto" data-number="4">Quarta escolha</p>
+			</div>	
+		</div> 	
+	</div>
+	<script type="text/javascript" src="js/jogo.js"></script>
+</body>
+</html>
