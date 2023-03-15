@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+	<meta charset="utf-8">
+	<title>Quiz</title>
+	<link rel="stylesheet" type="text/css" href="../css/app.css">
+	<link rel="stylesheet" type="text/css" href="../css/jogo.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div id="game" class="justify-center flex-column">
+			<div id="hud">
+				<div id="hud-item">
+					<p class="class-prefix">
+						Perguntas 
+					</p>
+					
+					</h1>
+				</div>
+				<div id="hud-item">
+					
+				</div>
+			</div>
+
+           <form action="http://localhost:3000/api/question" method="post">
+
+               
+               <h2 id="Pergunta">
+                <textarea name="question" id="" cols="30" rows="5" style="width: 100%;font-size: 1.3rem;text-indent: 1.5em;" placeholder="Escreve aqui a pergunta!"></textarea> 
+            
+                </h2>
+               <div class="pergunta-grupo">
+                   <p class="escolha-prefix">1</p>
+                   <input type="" name="answerOne" placeholder="Resposta A" style="width: 100%;font-size: 1.3rem;">
+                </div>				
+                <div class="pergunta-grupo">
+                    <p class="escolha-prefix">2</p>
+				    <input type="" name="answerTwo" placeholder="Resposta B" style="width: 100%;font-size: 1.3rem;">
+			   </div>	
+			   <div class="pergunta-grupo">
+				    <p class="escolha-prefix">3</p>
+				    <input type="" name="answerThree" placeholder="Resposta C" style="width: 100%;font-size: 1.3rem;">
+			    </div>	
+			    <div class="pergunta-grupo">
+				    <p class="escolha-prefix">4</p>
+                    <input type="" name="answerFour" placeholder="Resposta 4" style="width: 100%;font-size: 1.3rem;">
+			    </div>	
+			    <div class="pergunta-grupo">
+				    <p class="escolha-prefix" >✔</p>
+                    <input type=""  type="number" max="4" min="" name="rightanswer" placeholder="Digite o número que corresponde ao correcto!" style="width: 100%;font-size: 1.3rem;">
+			    </div>	
+			    <div class="pergunta-grupo">
+				    <p class="escolha-prefix" >CATEGORIA</p>
+                    <select name="category" id="" style="width: 100%;font-size: 1.3rem;">
+                            
+                    </select>
+			    </div>	
+	    	</div> 	
+	</div>
+    
+     </form> 
+	<script type="text/javascript" src="js/jogo.js"></script>
+</body>
+</html>

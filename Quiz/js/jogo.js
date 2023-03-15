@@ -12,7 +12,7 @@ let PerguntaAvaliar = [];
 let Perguntas = [];
 
 const Bonus_Resposta = 20;
-let Numero_perguntas =0 ;
+let   Numero_perguntas =0 ;
 
 //Fazer a busca das perguntas directo da API
   fetch('http://localhost:3000/api/questions').then(res=>{
@@ -20,11 +20,11 @@ let Numero_perguntas =0 ;
  	 }).then(lerPerguntas=>{
 		 console.log(lerPerguntas.result);
          Numero_perguntas = lerPerguntas.result.length ;
- 
 		 Perguntas = lerPerguntas.result;
 		 IniciarJogo();
      }).catch(erro=>{
-	  console.error(erro);
+	 	 console.error(erro);
+         return window.location.assign('Loading.html');
 
      });
 
@@ -42,9 +42,9 @@ PegarNovaPergunta = () => {
 	if (PerguntaAvaliar.length == 0 || contadorDePergunta >= Numero_perguntas) {
 		// vai para a página de fim de jogo
 		   localStorage.setItem('ScoreRecente', score);
-		return window.location.assign('fim.html');
-		// salvar score na base de dados
-		// localStorage.GetItem('ScoreREcente');
+		   return window.location.assign('fim.html');
+		   // salvar score na base de dados
+		   // localStorage.GetItem('ScoreREcente');
 
 	}
 
